@@ -1,0 +1,71 @@
+<template>
+  <div>
+    <span class>
+      <input type="checkbox" name />
+    </span>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {}
+};
+</script>
+
+<style scoped>
+input[type="checkbox"] {
+  top: 13px;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #050801);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e,
+    inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5),
+    inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type="checkbox"] {
+  background: linear-gradient(0deg, #03e9f4, #03e9f4);
+  box-shadow: 0 0 2px #03e9f4, 0 0 0 4px #353535, 0 0 0 5px #3e3e3e,
+    inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5),
+    inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(0deg, #050801, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(0.98, 0.96);
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 40px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 25px;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, #6b6b6b, #050801);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:after {
+  left: 65px;
+  background: #03e9f4;
+  box-shadow: 0 0 5px #13b3ff, 0 0 15px #03e9f4;
+}
+</style>

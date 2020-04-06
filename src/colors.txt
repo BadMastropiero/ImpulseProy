@@ -1,0 +1,12 @@
+discount: #E4FF1A
+font, shopBtn Background: #050801
+neon: #03e9f4
+linear-gradient effect, switch-btn: #13b3ff 03e9f4; 0deg, #6b6b6b, #050801; 0deg, #050801, #6b6b6b
+
+paleta:
+
+primary: #090c9b
+secundary: #13b3ff
+accent: #050801
+info: #e9f1f7
+alert: #f44336
